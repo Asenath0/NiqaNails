@@ -6,7 +6,7 @@ function Landing() {
       <div className="left">
         <h1>Zadbam o Twoje paznokcie z największą starannością!</h1>
         <a className="button" href="#about">
-          Poznajmy się
+          <p>Poznajmy się</p>
         </a>
       </div>
       <div className="right">

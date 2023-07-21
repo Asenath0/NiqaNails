@@ -1,22 +1,46 @@
 .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .menu-button {
-    font-size: 1.2rem;
-    color: var(--text-dim);
-    transition: 0.2s;
-    padding: 0 1.2em;
-    text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  transition: 0.2s;
+  padding: 0 1.2em;
+  text-decoration: none;
 }
 
 .menu-button:hover {
-    color: var(--text);
+  color: var(--text);
 }
 
 .divider {
-    height: 2.5rem;
-    border-left: 1px solid var(--text-dim);
+  height: 2.5rem;
+  border-left: 1px solid var(--text-dim);
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 1.5em;
+}
+
+@media screen and (max-width: 786px) {
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+
+  .menu-button {
+    font-size: 1rem;
+    transition: 0.2s;
+    padding: 0;
+    text-decoration: none;
+  }
 }
