@@ -1,0 +1,29 @@
+:root {
+  --text: #000;
+  --text-dim: #444;
+  --primary: #EAE5D8;
+  --accent: #FFE5F6;
+
+  --background: #fff;
+  --shadow: #44444477;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-family: 'Benne', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}

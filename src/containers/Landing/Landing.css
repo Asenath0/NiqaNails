@@ -1,0 +1,106 @@
+.landing {
+  width: 100%;
+  padding: 10rem 1rem 1rem 1rem;
+  margin-bottom: 7rem;
+  background: linear-gradient(var(--accent), var(--primary));
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.picture {
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px var(--shadow);
+  flex-shrink: 0;
+}
+
+.--main {
+  max-width: 30vw;
+  max-height: 30vw;
+  transform: translate(0, 7rem);
+  height: 512px;
+  width: 512px;
+  background-image: url("../../assets/nails1.png");
+}
+
+.--secondary {
+  max-width: 20vw;
+  max-height: 20vw;
+  transform: translate(-7rem, 0);
+  height: 380px;
+  width: 380px;
+  background-image: url("../../assets/nails2.png");
+  position: relative;
+  z-index: 2;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 3rem;
+  max-width: 600px;
+  text-align: right;
+  line-height: 1.1em;
+  font-weight: normal;
+  position: relative;
+  z-index: 3;
+}
+
+.button {
+  padding: 0.5em 1em;
+  color: var(--text-dim);
+  border: 1px solid var(--text-dim);
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ffffff77;
+}
+
+@media screen and (max-width: 786px) {
+  .landing {
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    padding-top: 6rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    align-items: center;
+    margin: 7rem 0;
+  }
+
+  .--main {
+    max-width: 70vw;
+    max-height: 70vw;
+  }
+
+  .--secondary {
+    position: absolute;
+    transform: translate(0, 0);
+    right: 1rem;
+    max-width: 60vw;
+    max-height: 60vw;
+  }
+}

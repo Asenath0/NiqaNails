@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-button {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    transition: 0.2s;
+    padding: 0 1.2em;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    color: var(--text);
+}
+
+.divider {
+    height: 2.5rem;
+    border-left: 1px solid var(--text-dim);
+}
