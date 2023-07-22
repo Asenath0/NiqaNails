@@ -2,7 +2,7 @@ import "./Landing.css";
 
 function Landing() {
   return (
-    <section className="landing">
+    <section id="landing">
       <div className="left">
         <h1>Zadbam o Twoje paznokcie z największą starannością!</h1>
         <a className="button" href="#about">

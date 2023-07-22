@@ -1,0 +1,79 @@
+#portfolio {
+    position: relative;
+    margin-top: 3rem;
+}
+
+#portfolio h1 {
+    font-family: 'Licorice', cursive;
+    display: inline-block;
+    font-weight: normal;
+    padding: 1rem 4rem 1rem 2rem;
+    font-size: 2rem;
+    background-color: var(--primary);
+    border-radius: 0 2rem 0 0;
+    width: auto;
+    position: relative;
+    margin: 0;
+}
+
+#portfolio h1::before {
+    content: "";
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--primary);
+    position: absolute;
+    right: -2rem;
+    bottom: 0;
+}
+
+#portfolio h1::after {
+    content: "";
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--background);
+    position: absolute;
+    right: -2rem;
+    bottom: 0;
+    border-radius: 0 0 0 2rem;
+}
+
+.posts {
+    background-image: linear-gradient(var(--primary), var(--accent));
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.post img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+    margin: 0;
+    line-height: 1em;
+    background-color: #00000099;
+    transform: translateY(100%);
+    transition: 0.2s;
+    color: var(--background);
+}
+
+.post:hover p {
+    transform: translateY(0);
+}
