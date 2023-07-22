@@ -1,4 +1,4 @@
-import { usePosts } from "../../providers/PostsProvider"
+import { useMorePosts, usePosts } from "../../providers/PostsProvider"
 import './Portfolio.css'
 
 function Post({post}) {
@@ -10,6 +10,8 @@ function Post({post}) {
 
 function Portfolio() {
     const posts = usePosts()
+    const SeeMore = useMorePosts()
+    console.log(SeeMore)
     
     return (
         <section id="portfolio" >
@@ -17,6 +19,7 @@ function Portfolio() {
             <div className="posts">
             {posts.map(post => post.media_type === 'IMAGE' && <Post post={post} />)}
             </div>
+            {SeeMore.areMore && <button onClick={() => {SeeMore.getMorePosts()}}>dumpcia</button>}
         </section>
     )
 }
