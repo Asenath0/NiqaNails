@@ -1,0 +1,40 @@
+.certificate {
+    width: 300px;
+    height: 180px;
+    border: 2px solid var(--primary);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.certificate .title {
+    margin: 0;
+    font-size: 1.2rem;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.certificate .issuing {
+    margin: 0.5em;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+.certificate:hover .title {
+    scale: 1.05;
+}
+
+.certificate:hover .issuing {
+    scale: 1.1;
+}
+
+.certificate .date {
+    margin: 0;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1em;
+    bottom: 0.5rem;
+}

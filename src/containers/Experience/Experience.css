@@ -1,0 +1,26 @@
+#experience h2 {
+    font-family: 'Licorice', cursive;
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#experience .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#experience button {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    font-family: var(--basic-font);
+    font-size: 1rem;
+}
