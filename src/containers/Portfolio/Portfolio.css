@@ -7,8 +7,8 @@
     font-family: 'Licorice', cursive;
     display: inline-block;
     font-weight: normal;
-    padding: 1rem 4rem 1rem 2rem;
-    font-size: 2rem;
+    padding: 1rem 4rem 1rem 10vw;
+    font-size: 2.5rem;
     background-color: var(--primary);
     border-radius: 0 2rem 0 0;
     width: auto;
@@ -39,6 +39,67 @@
     border-radius: 0 0 0 2rem;
 }
 
+#portfolio button {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--background);
+    border: none;
+    outline: none;
+    font-family: var(--basic-font);
+    font-size: 1rem;
+    z-index: 1;
+}
+
+#portfolio button::before {
+    content: "";
+    display: block;
+    background-color: var(--background);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    border-top-right-radius: 40px;
+    z-index: 0;
+}
+
+#portfolio button::after {
+    content: "";
+    display: block;
+    background-color: var(--background);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    border-top-left-radius: 40px;
+    z-index: 0;
+}
+
+#portfolio .button-wrapper {
+    height: 80px;
+    width: 250px;
+    background-color: var(--accent);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 40px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+#portfolio .button-wrapper::before {
+    content: "";
+    display: block;
+    background-color: var(--accent);
+    width: 320px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
 .posts {
     background-image: linear-gradient(var(--primary), var(--accent));
     padding: 3rem;
@@ -52,13 +113,14 @@
 .post {
     position: relative;
     overflow: hidden;
-    height: 300px;
+    height: min(300px, 80vw);
 }
 
 .post img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: bottom;
 }
 
 .post p {

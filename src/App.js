@@ -4,6 +4,8 @@ import About from "./containers/About/About";
 import Experience from "./containers/Experience/Experience";
 import Portfolio from "./containers/Portfolio/Portfolio";
 import PostsProvider from "./providers/PostsProvider";
+import PriceList from "./containers/PriceList/PriceList";
+import Footer from "./containers/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <About />
         <Experience />
         <Portfolio />
+        <PriceList />
+        <Footer />
       </div>
     </PostsProvider>
   );

@@ -4,12 +4,13 @@
   --primary: #EAE5D8;
   --accent: #FFE5F6;
 
-  --background: #fff;
+  --background: #ffffff;
   --shadow: #44444477;
   --basic-font: 'Libre Baskerville', serif;
 }
 
 body {
+  background-color: var(--background);
   margin: 0;
   padding: 0;
   color: var(--text);

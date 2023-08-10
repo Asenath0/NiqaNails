@@ -1,3 +1,9 @@
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #experience h2 {
     font-family: 'Licorice', cursive;
     font-weight: normal;
@@ -23,4 +29,5 @@
     outline: none;
     font-family: var(--basic-font);
     font-size: 1rem;
+    margin: 50px auto;
 }

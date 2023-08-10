@@ -1,0 +1,28 @@
+#contact {
+    width: 100%;
+    background-color: var(--text-dim);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
+#contact img {
+    width: 300px;
+    max-width: 100%;
+}
+
+#contact p {
+    color: #ddd;
+}
+
+.links {
+    margin: 1em;
+}
+
+@media screen and (max-width: 786px) {
+    #contact {
+        justify-content: center;
+    }
+
+}

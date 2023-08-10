@@ -11,13 +11,13 @@ function Experience() {
 
   function showMore() {
     setShownNumber(shownNumber + 3);
-    setLeft(left - 3);
-    setShownCertificates(certificates.slice(0, shownNumber));
   }
 
   useEffect(() => {
     setShownCertificates(certificates.slice(0, shownNumber));
+    setLeft(certificates.length - shownNumber);
   }, [shownNumber]);
+
   return (
     <section id="experience">
       <h2>Certyfikaty</h2>
@@ -31,8 +31,8 @@ function Experience() {
             type={item.type}
           />
         ))}
-        {left > 0 && <button onClick={showMore}>Zobacz więcej ({left})</button>}
       </div>
+      {left > 0 && <button onClick={showMore}>Zobacz więcej ({left})</button>}
     </section>
   );
 }

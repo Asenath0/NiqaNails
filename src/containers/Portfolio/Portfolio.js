@@ -22,14 +22,16 @@ function Portfolio() {
           (post) => post.media_type === "IMAGE" && <Post post={post} />
         )}
       </div>
-      {SeeMore.areMore && (
-        <button
-          onClick={() => {
-            SeeMore.getMorePosts();
-          }}
-        >
-          dumpcia
-        </button>
+      {SeeMore?.areMore && (
+        <div className="button-wrapper">
+          <button
+            onClick={() => {
+              SeeMore.getMorePosts();
+            }}
+          >
+            Zobacz więcej
+          </button>
+        </div>
       )}
     </section>
   );
