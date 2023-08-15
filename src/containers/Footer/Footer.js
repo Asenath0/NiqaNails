@@ -3,6 +3,7 @@ import image from "../../assets/iconx3.png";
 
 function Footer() {
   return (
+    <>
     <section id="contact">
       <img src={image} alt={"logo"}></img>
       <div className="links">
@@ -10,6 +11,10 @@ function Footer() {
         <p>instagram.com/nails.by.weronika.pstr/</p>
       </div>
     </section>
+    <footer>
+      Weronika Pstrokońska &copy; 2023. Design by Katarzyna Pstrokońska
+    </footer>
+    </>
   );
 }
 

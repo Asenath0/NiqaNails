@@ -1,0 +1,19 @@
+#opinions {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#opinions div {
+    width: 500vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#opinions img {
+    width: min(400px, 90vw);
+}
+

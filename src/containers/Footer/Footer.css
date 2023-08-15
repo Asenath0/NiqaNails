@@ -26,3 +26,11 @@
     }
 
 }
+
+footer {
+    text-align: center;
+    background-color: var(--text-dim);
+    color: var(--background);
+    font-size: 0.5rem;
+    padding: 1em;
+}

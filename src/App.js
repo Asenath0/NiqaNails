@@ -6,6 +6,7 @@ import Portfolio from "./containers/Portfolio/Portfolio";
 import PostsProvider from "./providers/PostsProvider";
 import PriceList from "./containers/PriceList/PriceList";
 import Footer from "./containers/Footer/Footer";
+import Opinions from "./containers/Opinions/Opinions";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Experience />
         <Portfolio />
         <PriceList />
+        <Opinions />
         <Footer />
       </div>
     </PostsProvider>

@@ -8,7 +8,7 @@ function About() {
         <img src={Me} alt="moje zdjęcie" />
       </div>
       <div className="right">
-        <h2>Cześć! Jestem Weronika.</h2>
+        <h2>Cześć! Jestem Weronika</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           bibendum ipsum magna, luctus rutrum felis fringilla ac. Phasellus
