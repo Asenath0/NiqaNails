@@ -1,14 +1,6 @@
 import { useMorePosts, usePosts } from "../../providers/PostsProvider";
 import "./Portfolio.css";
-
-function Post({ post }) {
-  return (
-    <div className="post">
-      <img src={post?.media_url} alt={post?.media_type} />
-      <p>{post.caption}</p>
-    </div>
-  );
-}
+import Post from "../../components/Post/Post";
 
 function Portfolio() {
   const posts = usePosts();
@@ -19,7 +11,9 @@ function Portfolio() {
       <h1>Moje prace</h1>
       <div className="posts">
         {posts.map(
-          (post) => post.media_type === "IMAGE" && <Post post={post} />
+          (post) =>
+            (post.media_type === "IMAGE" ||
+              post.media_type === "CAROUSEL_ALBUM") && <Post post={post} />
         )}
       </div>
       {SeeMore?.areMore && (

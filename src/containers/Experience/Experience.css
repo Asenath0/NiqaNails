@@ -30,4 +30,10 @@
     font-family: var(--basic-font);
     font-size: 1rem;
     margin: 50px auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#experience button:hover {
+    opacity: 0.8;
 }

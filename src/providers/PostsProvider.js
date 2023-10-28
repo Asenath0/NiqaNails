@@ -14,7 +14,7 @@ export function useMorePosts() {
 function PostsProvider({ children }) {
   const [posts, setPosts] = useState([]);
   const [url, setUrl] = useState(
-    "https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=" +
+    "https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&limit=10&access_token=" +
       process.env.REACT_APP_ACCESS_TOKEN
   );
 

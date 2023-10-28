@@ -48,6 +48,12 @@
     font-family: var(--basic-font);
     font-size: 1rem;
     z-index: 1;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#portfolio button:hover {
+    opacity: 0.8;
 }
 
 #portfolio button::before {
@@ -110,32 +116,3 @@
     gap: 2rem;
 }
 
-.post {
-    position: relative;
-    overflow: hidden;
-    height: min(300px, 80vw);
-}
-
-.post img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: bottom;
-}
-
-.post p {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 1em;
-    margin: 0;
-    line-height: 1em;
-    background-color: #00000099;
-    transform: translateY(100%);
-    transition: 0.2s;
-    color: var(--background);
-}
-
-.post:hover p {
-    transform: translateY(0);
-}

@@ -1,0 +1,9 @@
+.opinion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.8s;
+}
